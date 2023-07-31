@@ -1,0 +1,70 @@
+
+<!---------------end information-container2-->
+
+<?php
+include('connect.php');
+$query_approved = "SELECT * FROM `approved_Cdf_Fund_companies`";
+$query_approved_result = mysqli_query($con, $query_approved);
+
+
+if($query_approved_result){
+while($row = mysqli_fetch_assoc($query_approved_result)){
+
+$company_names = $row['company_names'];
+$town_of_residence = $row['town_of_residence'];
+$constituency = $row['constituency'];
+$number_of_employees = $row['number_of_employees'];
+$requested_fund_amount = $row['requested_fund_amount'];
+$payment_period = $row['payment_period'];
+$monthly_repayment_period = $row['monthly_repayment_period'];
+
+
+?>
+
+
+
+
+<div class="informatiion-container2">
+
+<div class="inner-information-container2">
+  <div><p class="info-11"><?php echo $row['company_names'];?></p></div>
+  <div><p class="info-12"><?php echo $row['town_of_residence'];?></p></div>
+  <div><p class="info-13"><?php echo $row['constituency'];?></p></div>
+  <div><p class="info-14"><?php echo $row['number_of_employees'];?></p></div>
+  <div><p class="info-15"><?php echo $row['requested_fund_amount'];?></p></div>
+  <div><p class="info-16"><?php echo $row['payment_period'];?></p></div>
+  <div><p class="info-17"><?php echo $row['monthly_repayment_period'];?></p></div>
+</div>
+                    
+</div>     
+
+
+<?php
+  
+ }
+}
+
+?>
+
+
+
+
+
+
+
+<div class="informatiion-container2">
+
+<div class="inner-information-container2">
+<div><p class="info-11">company_names</p></div>
+<div><p class="info-12">town_of_residence</p></div>
+<div><p class="info-13">constituency</p></div>
+<div><p class="info-14">number_of_employees</p></div>
+<div><p class="info-15">requested_fund_amount</p></div>
+<div><p class="info-16">payment_period</p></div>
+<div><p class="info-17">monthly_repayment_period</p></div>
+</div>
+                                        
+</div>     
+                    
+                    
+                    

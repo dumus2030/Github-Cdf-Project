@@ -1,0 +1,297 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box; 
+}
+               
+.header{
+width: 100%;
+height: 30vh;
+background:rgba(2, 192, 87, 0.671);
+margin-bottom: 50px;
+}
+
+        
+.main-conatainer-searching{
+position: relative;
+top: 2px;
+width: 100%;
+height: 30vh;
+background-color: black;
+padding-left: 20px;
+padding-right: 20px;
+border-bottom: 2px solid black;
+border-top: 2px solid rgb(0, 255, 166);
+margin-bottom: 2px;
+
+}
+
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    
+
+.flex p{
+text-align: center;
+color: rgb(255, 255, 255);
+}
+
+
+.flex a{
+text-decoration: none;
+transition: 1s;
+cursor: pointer;
+}
+
+
+
+.flex a:hover{
+ color: rgb(0, 228, 106);
+  }
+  
+
+
+span{
+color:cornflowerblue;
+}
+
+
+.about-div{
+left: -30px;
+width: 102%;
+height: 15vh;
+background-color: white;
+padding-left: 20px;
+padding-right: 20px;
+border-bottom: 2px solid black;
+display: flex;
+justify-content: space-between;
+padding-top: 10px;
+margin-bottom: 5px;
+margin-top: 2px;
+}
+
+
+
+.about p{
+width: 100%;
+height: 100%;
+background-color: ghostwhite;
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 10px;
+border-radius: 10px;
+color: rgb(0, 0, 0);
+font-size: 18px;
+border: 2px solid rgb(0, 174, 255);
+
+}
+
+
+
+.networking p{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  border: 2px solid rgb(0, 174, 255);
+  }
+  
+  
+
+
+.networking{
+position: relative; 
+margin-right: 170px;
+background-color: transparent;
+width: 700px;
+height:130px;
+}
+
+
+.about{
+  background-color: transparent;
+  width: 700px;
+  height:130px;
+  margin-left: 170px;
+}
+
+
+
+
+
+.flex img{
+  margin-top: 7px;
+  border: 3px solid greenyellow;
+  transition: 1s;
+  cursor: pointer;
+}
+
+
+.flex img:hover{
+  margin-top: 7px;
+  border: 3px solid rgb(0, 157, 255);
+}
+
+
+.search{
+position: absolute;
+top: 55px;
+left: 53%;
+transform: translate(-50%,-50%);
+}
+        
+        
+form input{
+width: 600px;
+padding: 5px 20px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+outline: none;
+border: rgba(0, 0, 0, 0.144);
+margin-left: 2px;
+}
+        
+.search-form{
+position: absolute;
+top: 100px;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+        
+button{
+position: absolute;
+top: 100px;
+left: 70.1%;
+transform: translate(-50%,-50%);
+padding: 5px 25px;
+color: aliceblue;
+background-color: rgb(0, 0, 0);
+transition: 1s;
+cursor: pointer;
+        
+}
+        
+button:hover{
+background-color: rgb(3, 173, 240);
+}
+        
+        
+.logo{
+width: 150px;
+position: absolute;
+top: 10%;
+left: 5%;
+transform: translate(-50%,-50%);
+}
+
+
+label{
+ color: white;
+}
+        
+        
+        
+        
+        
+.welcome{
+position: absolute;
+top: 150px;
+ left: 50%;
+z-index: 5;
+transition: 1s;
+cursor: pointer;
+text-align: center;
+transform: translate(-50%,-50%);
+        
+}
+        
+.welcome:hover{
+ color: mediumseagreen;     
+}
+        
+        
+        
+ .netu{
+position: relative;
+top: 140px;
+left: 25px;
+color: white;
+}
+        
+        
+        
+        
+               
+               
+        nav{
+        background-color: rgb(0, 247, 144);
+        height: 10vh;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+               
+        .nav-links{
+        z-index: 6;
+        right: 0;
+        position: absolute;
+        top:230px;
+   
+        }
+                       
+        .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 0px 20px;
+        padding-bottom: 25px;
+        
+      
+                       
+         }
+                       
+        .nav-links ul li a{
+         text-decoration: none;
+         font-weight: 900;
+         font-size: 16px;
+         color: rgb(0, 0, 0);
+         
+        
+         
+                        
+        }
+                       
+        .nav-links ul li ::after{
+         content: '';
+         width: 0%;
+        height: 5px;
+        background-color: black;
+        display: block;
+        margin: auto;
+        transition: 1s;
+        }
+                       
+        .nav-links ul li:hover ::after{
+        width: 100%;
+        }
+                       
+        .nav-links img{
+        width: 15px;
+        margin-right: 5px;
+        }
+                        
+               
+               
+        /*----------------------------------conainer users--------------------------*/
+        

@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-index{
+background-color: white;
+width: 100%;
+max-height: 90vh;
+}
+
+
+
+.login-heading-box{
+  margin-top: 10%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.login-heading-box h1{
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.account{
+  color: rgb(0, 225, 255);
+}
+
+.login-heading-box img{
+  width: 130px;
+  margin-top: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+}
+
+/*-------------------------------------------------*/
+
+
+.cover{
+  margin-bottom: 20px;
+}
+
+
+.cover2 input{
+width: 96.5%;
+margin-top: 10px;
+margin-bottom: 20px;
+
+}
+
+.code2{
+  margin-top: 20px;
+  
+}
+
+.control{
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.473);
+
+}
+
+
+
+.cover3{
+  margin-top: 20px;
+}
+
+
+
+/*-----------------------------------------------------submit buttton--------------------*/
+ 
+
+
+
+button{
+width: 96.5%;
+margin-top: 20px;
+background-color: rgb(52, 138, 13);
+padding: 10px 30px;
+cursor: pointer;
+color: white;
+border: 4px;
+box-shadow: 0 3px 10px black;
+text-decoration: none;
+transition: 1s;
+}
+
+button{
+  background-color: rgb(36, 95, 9);
+}
+
+
+
+
+/*-----------------------------------------------------end submit buttton--------------------*/
+
+
+
+
+
+/*-----------------------------------------------------artworks--------------------*/
+
+
+.cycle-1{
+  position: absolute;
+  left:-20px;
+  top:-20px;
+  z-index: 2;
+}
+
+
+.hectagone-1{
+  position: absolute;
+  left:50px;
+  top:-20px;
+  z-index: 3;
+}
+
+
+.star-1{
+  position: absolute;
+  right:50px;
+  top: 900px;
+  z-index: 3;
+}
+
+.phone-1{
+  position: relative;
+  cursor: pointer;
+
+}
+
+
+.error-messages{
+  color: rgb(255, 0, 0);
+  font-weight: 900;
+ 
+}
+
+
+
+.successful-message{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: black;
+  box-shadow: 0 3px 10px black;
+  padding: 4px 80px;
+ 
+  }
+
+
+
+  .successful-message2{
+    position:absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    box-shadow: 0 3px 10px black;
+    padding: 0px 80px;
+    z-index: 10;
+  }
+
+  
+
+
+
+
+
+
+  .successful-message h1{
+    background-color: chartreuse;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    opacity: 0.5;
+  }
+  
+  .signing{
+  list-style: none;
+  color:  rgb(119, 230, 8);;
+
+  }
+
+
+
+/*--------------------------------------new form un disturded---------------------*/
+
+.mother{
+position:absolute;
+top: 69%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+  
+
+.mother input{
+margin-right: 15px;
+padding: 5px 10px 5px 5px;
+}
+
+span{
+color:rgb(0, 225, 255);
+}
+
+
+.login-div{
+position: absolute;
+top: 50.5%;
+left: 40px;
+width: 700px;
+height: 41vh;
+background-color: transparent;
+border: 3px solid  rgb(0, 202, 24);
+border-radius: 20px;
+padding: 10px;
+}
+
+.login-div input{
+width: 100%;
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 10px;
+border: 1px solid  rgb(0, 202, 24);
+outline: none;
+}
+
+
+.loging-divs{
+margin-top: 10px;
+}
+
+.log-submit{
+background-color: rgb(52, 138, 13);
+width: 100%;
+transition: 1s;
+cursor: pointer;
+margin-bottom: 15px;
+}
+
+
+.log-submit:hover{
+background-color: rgb(36, 95, 9);
+}
+
+
+
+
+.already{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 184, 208);
+}
+
+.error-email{
+  color: red;
+
+}
+
+.error-password{
+  color: red;
+  
+}

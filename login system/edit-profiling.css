@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-index{
+background-color: rgb(0, 0, 0);
+width: 100%;
+max-height: 90vh;
+}
+
+
+
+.login-heading-box{
+  margin-top: 10%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.login-heading-box h1{
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.account{
+  color: rgb(0, 225, 255);
+}
+
+.login-heading-box img{
+  width: 130px;
+  margin-top: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+}
+
+/*-------------------------------------------------*/
+
+
+.cover{
+margin-bottom: 20px;
+}
+
+
+.cover2 input{
+width: 97.5%;
+margin-top: 10px;
+margin-bottom: 20px;
+
+}
+
+.code2{
+ margin-top: 20px; 
+}
+
+.control{
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.473);
+}
+
+
+
+.cover3{
+  margin-top: 20px;
+}
+
+
+
+/*-----------------------------------------------------submit buttton--------------------*/
+ 
+
+
+
+button{
+width: 96.5%;
+margin-top: 20px;
+background-color: rgb(52, 138, 13);
+padding: 10px 30px;
+cursor: pointer;
+color: white;
+border: 4px;
+box-shadow: 0 3px 10px black;
+text-decoration: none;
+transition: 1s;
+}
+
+button{
+  background-color: rgb(36, 95, 9);
+}
+
+
+
+
+/*-----------------------------------------------------end submit buttton--------------------*/
+
+
+
+
+
+/*-----------------------------------------------------artworks--------------------*/
+
+
+
+.error-messages{
+  color: rgb(255, 0, 0);
+  font-weight: 900;
+ 
+}
+
+
+
+.successful-message{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: black;
+  box-shadow: 0 3px 10px black;
+  padding: 4px 80px;
+ 
+  }
+
+
+
+  .successful-message2{
+    position:absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    box-shadow: 0 3px 10px black;
+    padding: 0px 80px;
+    z-index: 10;
+  }
+
+  
+
+
+
+
+
+
+  .successful-message h1{
+    background-color: chartreuse;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    opacity: 0.5;
+  }
+  
+  .signing{
+  list-style: none;
+  color:  rgb(119, 230, 8);;
+
+  }
+
+
+
+  /*--------------------------------------new form un disturded---------------------*/
+
+  .mother{
+  position:absolute;
+  top: 49%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+  width: 430px;
+  height: 600px;
+  background-color: aqua;
+  padding: 20px;
+  }
+
+  
+
+  .mother input{
+  padding: 10px;
+  }
+
+  span{
+color:rgb(0, 225, 255);
+  }
+
+  /*-------------------------------------------------------------styling the upload button--------------------------*/
+
+  #pic_upload{
+    position: absolute;
+    z-index: 10;
+    top:3px;
+    left: -1238px;
+    width:260px;
+    border-radius:50%;
+     border: 2px solid rgb(255, 0, 0);
+    }
+          
+        
+          
+    #pic_upload:hover{
+    filter: invert(30%);
+    }
+        
+    #pic_upload::-webkit-file-upload-button{
+    opacity: 1;
+    }
+        
+    #pic_upload::before{
+    content: '';
+    display: inline-block;
+    width: 540px; 
+    height: 325px;
+    cursor: pointer;
+    }
+        
+    /*-----------------------------span----------------------------------*/
+        
+    span{
+    color:rgb(111, 189, 38);
+    }
+        
+    .success.mge{
+   color:chartreuse;
+    }
+        
+  .error.mgs{
+  color: red;
+  }
+
+  
+h1{
+  margin-bottom: 10px;
+  }
+  
+  

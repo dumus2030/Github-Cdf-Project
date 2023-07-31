@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>postbox</title>
+<link rel="Stylesheet" href="202.css">
+</head>
+<body>
+
+
+<div class="main">
+
+
+  <div class="side-users-div">
+    <div class="users-online">
+    <img src="user-uploads/64011ce1801535.82882601.jpg" width="50px" height="50px" style="border-radius: 30%;">
+    </div>
+    
+    <div class="user-onlin-names">
+    <h4>Nicolas Gondwe</h4>
+    </div>
+  </div>
+
+  <div class="registered-users">
+    <h4>Active Users</h4>
+    <span class="total-users">2,0000</span>
+    </div>
+
+
+
+
+ <div class="profile-image-defualt">
+<img src="default-icons/user-default 2.png" width="280px" height="330px">
+</div>
+                                         
+                                      
+<div class="profile-image">
+<img src="user-uploads/<?php echo $row['pic_upload'];?>" width="280px" height="330px">
+</div>
+                                        
+                                      
+                                       
+
+<h1 class="welcome">WELCOME<br /><?php echo $_SESSION['email'];?></h1>
+                                      
+ <!----------------------------------------------NAVIAGTION AND BACKGROUNDS--------------------------------------------->
+
+<div class="banner-holder-yellow"></div>
+<div class="nav-background-1"></div>
+<div class="white-post-background"></div>
+<div class="top-gray"></div>
+
+
+
+
+
+
+<!----------------------------------------------CDF LOGO START--------------------------------------------->
+<div class="cdf-log-nav">
+<img src="logo/CDF_Logo.svg.png" class="nav-logiz">
+</div>
+                    
+                 
+
+
+<nav class="navigation">
+
+                    <div class="nav-links">
+                    <ul>
+                    <li><a href="nav-search.php"><img src="user_icons/search 5.png">Search</a></li>
+                    <li><a href="design.php"><img src="user_icons/house icon-black.png">Home</a></li>
+                    <li><a href="form-downloads.php"><img src="user_icons/news icon black.png" class="user-icon">Form Downloads</a></li>
+                    <li><a href="profile.php"><img src="user_icons/user black.png" class="user-icon">User Profile</a></li>
+                    <li><a href="contact.php"><img src="user_icons/call.png" class="user-icon">Contact</a></li>
+                    <li><a href="logout.php"><img src="user_icons/log-ouy.png" class="user-icon">Logout</a></li>
+                    <li><a href="edit13.php"><img src="user_icons/settings icon-black.png" class="settings-icon">Settings</a></li>           
+                    </ul>
+                    </div>
+                    
+</nav>
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+<div class="postbox">
+
+<form action="200.php?user_id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data">
+
+<div class="form">
+<div class="texarea"><textarea type="text" maxlength="100" name="text" cols="40" rows="5" placeholder="say whats on your mind"></textarea>
+</div>
+
+
+<div class="file">
+<label for="file">
+<input type="file" name="image" class="files">
+</label>
+</div>
+
+<img src="user_icons/unnamed.png" class="camera" width="50px" height="50px">
+
+<div>
+<img src="user-uploads/<?php echo $row['pic_upload'];?>" width="50px" height="50px" class="post-small-top-img">
+</div>      
+                              
+<div>
+<img src="default-icons/user-default 2.png" width="50px" height="50px" class="post-small-defualt-img">
+</div>
+
+
+
+<div class="submit">
+<button type="submit" name="submit">Submit</button>                
+</div>
+
+<div class="charecters">
+  <span class="signal_number">0</span>
+  <span class="limit_numbers">/100</span>
+</div>
+
+
+</form>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="usernamess">
+  <p><?php echo $row['firstname']; ?>  <?php echo $row['lastname']; ?></p>
+   <small>Created_On: <?php echo $row['date']; ?></small>
+</div>
+
+
+
+<div class="shade-user-infor"></div>
+  
+<div class="user-infor">
+
+  
+  <div class="profile-infornation">
+    <p class="naming"><span class="nameis">Names:</span> Nicolas Gondwe</p><br />
+    <p><img src="user_icons/greens-icons/username.png" class="user-icon">User-Names: <?php echo $row['username']; ?></p><br />
+    <p><img src="user_icons/greens-icons/area mapping.png" class="area-icon">Town: <?php echo $row['town']; ?></p><br />
+    <p><img src="user_icons/greens-icons/locatio red transparent.png" class="loacation-icon">Area: <?php echo $row['area']; ?></p><br />
+    <p><img src="user_icons/greens-icons/constituency.png" class="loacation-icon">constituency: <?php echo $row['home']; ?></p><br />    
+    <p><img src="user_icons/greens-icons/age transparent.png" class="loacation-icon">Age: <?php echo $row['age']; ?></p><br />
+    <p><img src="user_icons/greens-icons/enelope green.png" class="email-icon">Email: <?php echo $row['email']; ?></p><br />
+    <p><img src="user_icons/greens-icons/call green transparent.png" class="contact-icon">Contact: <?php echo $row['contact']; ?></p><br />
+    <p><img src="user_icons/greens-icons/about icon.png" class="loacation-icon"><strong>About & Specialization:</strong><br /> <?php echo $row['about']; ?></p><br />
+    <p class="netting"><img src="user_icons/greens-icons/network transparent.png" class="loacation-icon"><strong>Networking Intrests:</strong><br /> <?php echo $row['networking']; ?></p><br />
+           
+     <center>
+      <a href="edit13.php" class="btn-edit-profil-1">Update Profile</a>
+     </center>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+<!-------------------------------------------------right side ----------------------------------->
+
+
+<div class="side-right">
+
+  <div class="search">
+
+  </div> 
+
+  
+  <div class="infor">
+  <img src="user_icons/news icon black.png" class="innfo-icon"><h1>Infor</h1>
+  </div>    
+  
+  <div class="about">
+  <h1>About:</h1>
+  <P><?php echo $row['about']; ?></P>
+  </div>    
+  
+  <div class="networking">
+  <h1>Networking:</h1>
+  <P><?php echo $row['networking']; ?></P>
+  </div>  
+  
+  <div class="copyright">
+  <center>
+  <p>Copyright 2023 
+  <br />All Rights Researved
+  </p>
+  </center>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+  
+<!-------------------------------------------------right side ----------------------------------->
+
+
+<?php
+  include('connect.php');
+  
+  $sql_posts = "SELECT * FROM pos WHERE user_id = $id ORDER BY post_id DESC";
+  $result_posts = mysqli_query($con,$sql_posts);
+  while ($row = mysqli_fetch_array($result_posts)){
+  
+     
+  $text = $row['text'];
+  $image = $row['image'];
+  $time_added = $row['time_added'];
+     
+  
+  
+                                    
+      
+  
+  }
+  
+  ?>
+
+
+
+
+
+<div class='poster-div'>
+
+
+<div class='text-div'>
+<h3>nicolas gondwe</h3>
+<small class='date-small'>Date:20 th April 2023</small>
+<img src='user-uploads/$pic_upload' style='border-radius: 50%;' class='user-post-img' width='50px' height='50px'>
+<p>This is my firsst post</p>
+</div>
+                                          
+                      
+<div class='image-div'>
+<img src='imagezz/05-11-18_Studio_1_D4867C_Black_0121_1200x1200.jpeg' style='margin-left: 48%; transform: translate(-50%,-50%);'>
+</div>
+                      
+                      
+<div class='comment-delete'>
+                    
+<div class='div-1c'>
+<img src='user_icons/greens-icons/trash.png' class="trash">
+</div>
+                                      
+<div class='div-2c'>
+<img src='user_icons/greens-icons/comment (2).png' class="comenting">      
+  </div>
+                                      
+  <div class='div-3c'>
+  <h4><a href='comments.php'>Comments</a></h4>       
+  </div>
+                      
+                      
+  </div>
+  </div>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+                    
+</body>
+</html>

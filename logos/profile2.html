@@ -1,0 +1,431 @@
+<?php
+session_start();
+include('connect.php');
+
+if(!isset($_SESSION['email']) || $_SESSION['email'] == ""){
+  
+  header('location:login.php');
+    }
+    else{
+      $email = $_SESSION['email'];
+    }
+
+
+    if(isset($_POST['submit-post'])){
+
+$post_img = $_FILES['post_img']['name'];
+$post_mgs = $_POST['post_mgs'];
+
+
+
+
+
+
+
+
+
+
+$TmpLocation = $_FILES['post_img']['tmp_name'];
+$fileSize = $_FILES['post_img']['size'];
+$fileError = $_FILES['post_img']['error'];
+$fileType = $_FILES['post_img']['type'];
+
+echo $post_mgs;
+echo $post_img;
+
+
+
+
+
+$sql = "INSERT INTO `posts`(`id`,`post_mgs`, `post_img`) VALUES (null,'$post_mgs', '$post_img')";
+$result = mysqli_query($con, $sql);
+
+if($result){
+header('location:profile.php?infor posts was successful!!!');
+}
+
+else{
+header('location:profile.php?infor posts was not successful!!!');
+}
+
+
+$fileExt = explode('.' , $post_img);
+$fileActualExt = strtolower(end($fileExt));
+$allowed = array('jpg', 'jpeg','png', 'gif');
+
+
+if(in_array($fileActualExt, $allowed)){
+
+  if($fileError === 0){
+   
+
+   if($fileSize < 1000000){
+        
+     $fileNameNew = uniqid('', true). "." . $fileActualExt;
+     $fileDestination = 'posts-image-uploads/'.$fileNameNew;
+     move_uploaded_file($TmpLocation, $fileDestination);
+    
+   }
+
+    else{
+     header('location: edit13.php?you file is too big');
+    }
+
+    }
+
+  else{
+    echo "there was something wrong";
+   }
+
+
+
+  }
+
+
+
+  else{
+    echo "you cant upload files of this nature";
+   }
+
+
+
+ }
+
+    ?>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  
+
+  
+<?php
+
+
+$sql = "SELECT * FROM `login_user` WHERE  email = '$email'";
+
+$result = mysqli_query($con, $sql);
+$usercount = mysqli_num_rows($result) > 0;
+
+if(!$usercount){
+echo "<p class='error-mgs'>please loggin first</p>";
+header('location: login.php');
+}
+
+if($usercount){
+  while($row = mysqli_fetch_assoc($result)){
+   
+
+  
+?>
+
+
+
+  <div class="main-container">
+
+  
+  <div class="profile-image-defualt">
+  <img src="default-icons/user-default 2.png" width="280px" height="330px">
+  </div>
+   
+
+    <div class="profile-image">
+      <img src="user-uploads/<?php echo $row['pic_upload'];?>" width="280px" height="330px">
+    </div>
+  
+  
+    
+
+       
+  <h1 class="welcome">WELCOME<br /><?php echo $_SESSION['email'];?></h1>
+      
+  
+
+      <div class="nav-background"> </div>
+      <div class="nav-background-1">
+        
+      </div>
+
+     
+  
+
+
+      <nav class="navigation">
+
+        
+
+          
+      
+           <div class="nav-links">
+            <ul>
+              <li><a href="nav-search.php"><img src="user_icons/search 4.jpg">Search</a></li>
+              <li><a href="design.php"><img src="user_icons/house icon-black.png">Home</a></li>
+              <li><a href="form-downloads.php">Form Downloads</a></li>
+              <li><a href="profile.php"><img src="user_icons/user black.png" class="user-icon">User Profile</a></li>
+              
+              <li><a href="contact.php">Contact</a></li>
+              <li><a href="logout.php">Logout</a></li>
+              <li><a href="edit13.php"><img src="user_icons/settings icon-black.png" class="settings-icon">Settings</a></li>
+             </ul>
+           </div>
+
+
+           <div class="cdf-log-nav">
+          <img src="logo/CDF_Logo.svg.png" class="nav-logiz">
+       
+           </div>
+
+
+          
+  
+       
+      </nav>
+
+ 
+      
+  </div>
+
+<!------------------------------------------------midddles section--------------------------------------->
+
+<hr>
+<section class="middle-section">
+
+  <div class="background-middle">
+
+
+    <div class="profile-name-infor">
+        <div class="profile-infor1">
+          <p>Names: <?php echo $row['username']; ?></p><br />
+          <p>Town: <?php echo $row['town']; ?></p><br />
+          <p>Area: <?php echo $row['area']; ?></p><br />
+          <p>constituency: <?php echo $row['home']; ?></p><br />
+ 
+          <p>Age: <?php echo $row['age']; ?></p><br />
+          <p>Email: <?php echo $row['email']; ?></p><br />
+          <p>Contact: <?php echo $row['contact']; ?></p><br />
+          <p><strong>About & Specialization:</strong><br /> <?php echo $row['about']; ?></p><br />
+          <p class="netting"><strong>Networking Intrests:</strong><br /> <?php echo $row['networking']; ?></p><br />
+
+               <center>
+               <a href="edit13.php" class="btn-edit-profil-1">Update Profile</a>
+               </center>
+            
+          
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------------------------ending of purple backgroun container 1-->
+
+
+<div class="linner"></div>
+
+
+
+<div class="profile-name-about">
+  <div class="profile-infor-about1">
+ 
+      <h4>ABOUT:</h4>
+        <br />
+       <p><?php echo $row['about']; ?></p>
+
+    
+    
+        
+         <h4 class="luka">Looking To Connect With:</h4>
+         <br />
+         <p class="connect"><?php echo $row['networking']; ?></p>
+   
+    
+    
+  </div>
+</div>
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------ending of purple backgroun container 2-->
+
+
+
+  </div>
+
+  
+  
+</section>
+
+<div class="profil-pic-green">
+      <img src="creative-profile-art/green profil.png" class="profil-green">
+      </div>
+  
+      <div class="green">
+      <img src="creative-profile-art/green below2.png" class="green-below-1">
+  
+      </div>
+     
+     
+
+
+
+
+
+
+
+      
+        
+
+
+      <!-------------------------------------------------------------------------------posts section--------------------------------------->
+
+  <div class="Posts-main-container">
+    <div class="posts-box">
+
+      <div class="form-boxing">
+       <form action="profile.php" method="POST" enctype="multipart/form-data"> 
+
+      <div>
+        <textarea type="post-mgs" name="post_mgs" placeholder="Write Your Posts Here!!!!" class="textarea-post"></textarea>
+      </div>
+
+      <div>
+        <lable>
+          <input type="file" name="post_img" id="select_post_img" class="input-file-upload-post">
+        </lable>
+      </div>
+
+
+      <div>
+        <button class="submit-button-post" name="submit-post">Post</button>
+      </div>
+
+       </form>
+      </div>
+
+
+      <!-------------------------------------------firm ending design------------------------------------------>
+
+
+
+   <!-------------------------------------------------------------user add icon------------------------------>
+
+
+
+
+
+      <div class="top-img-small-pic-container">
+       <img src="user-uploads/<?php echo $row['pic_upload'];?>" width="50px" height="50px" class="post-small-top-img">
+       <img src="default-icons/user-default 2.png" width="50px" height="50px" class="post-small-defualt-img">
+       <img src="user_icons/add camera.png" width="60px" height="50px" class="post-small-add-camera-img2">
+       <h1 class="add-pic-post">Add pic</h1>
+      </div>
+
+
+
+   <!-------------------------------------------------------------user add icon end------------------------------>
+      
+
+
+      
+      <div class="username-posts">
+        <h1 class="post-name-user">Nicolas Gondwe</h1>
+        <small>DATE:  </small>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="big-image-box1">
+
+  
+
+
+
+
+
+
+<div class="main-img-post-box">
+      <img src="posts-image-uploads/" id="post_img"  width="auto" height="349px" class="post-main-img">
+   </div>
+
+
+    <div class="post-box-contain">
+
+
+    <div class="small-image-posting">
+     <img src="user-uploads/"  width="50px" height="50px" class="post-imagi">
+    </div>
+
+    <div class="text-posting">
+      <h2>nicolas gondwe</h2>
+      <p>date:</p>
+
+
+    </div>
+
+   </div>
+
+
+
+
+
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+
+} 
+}
+
+
+?>
+
+
+
+
+ 
+
+</body>
+</html>

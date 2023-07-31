@@ -1,0 +1,180 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+.header{
+width: 100%;
+ height: 100vh;
+background-color: white;
+z-index: -1;
+}
+
+.homei{
+position: absolute;
+top: 80px;
+right: 60px;
+width: 3%;
+background-color: rgb(255, 255, 255);
+border-radius: 50%;
+padding: 20px;
+transition: 1s;
+z-index: 7;
+cursor: pointer;
+}
+
+
+.homei:hover{
+background-color: rgb(216, 216, 216);
+}
+
+
+nav{
+width: 100%;
+height: 30vh;
+background-color: aquamarine;
+}
+
+.yo-container{
+position: absolute;
+top: 11%;
+left: 50%;
+width: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+cursor: pointer;      
+
+}
+
+.yo-container h1{
+ font-size: 60px;
+ z-index: 4;
+}
+          
+.yo-container p{
+font-size: 18px;
+z-index: 4;
+ }
+
+ .svg{
+ position: absolute;
+top: 80px;
+left: 60px;
+width: 10%;
+z-index: 6;     
+ }
+
+ .side-art{
+width: 22%;
+ position: absolute;
+top: -50px;
+left: -50px;
+z-index: 1;
+ }
+
+
+
+
+ .file{
+position: absolute;
+top: 50%;
+left: 2%;   
+ z-index: 2
+ }
+ 
+
+ .file-img{
+width: 30%;
+ }
+
+
+ .download-icon{
+ position: absolute;
+ top: 50%;
+ left: 250px;
+ width: 2.3%;
+cursor: pointer;  
+z-index: 5; 
+transition: 3s;  
+ }
+
+
+ .download-icon:hover{
+  border: 2px solid rgba(128, 128, 128, 0.404);
+ }
+
+ 
+
+
+ .download-file-body{
+ width: 100%;
+ height: 70vh;
+ background-color: transparent;
+ position: absolute;
+ top: 30%;
+ left: 0;
+ z-index: 0;
+ padding: 20px;
+ 
+
+ }
+
+
+ 
+
+
+
+
+ .close-container{
+width: 100%;
+position: relative;
+height: 66vh;
+background-color: transparent;
+z-index: 1;
+padding: 40px;
+
+
+ }
+
+
+
+.pipe2{
+position: absolute;    
+top: 29%;
+left: 80px;   
+cursor: pointer;
+z-index: 9;
+padding: 10px;
+}
+
+.down{
+
+width: 25px;
+z-index: 9;
+cursor: pointer;
+}
+
+
+.message-cdf{
+position: absolute;
+left: 40%;
+width: 1000px;
+height: 800px;
+padding: 30px;
+}
+
+.message-cdf p{
+font-size: 20px;
+}
+
+.lining{
+ width: 400px;
+height: 90vh;
+background-color: rgba(94, 94, 94, 0.014);
+position: absolute;
+left: -28px;
+top: 292px;
+text-align: center;
+margin-top: 100px;
+}

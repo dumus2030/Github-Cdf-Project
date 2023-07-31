@@ -1,0 +1,337 @@
+*{
+margin:0;
+padding: 0;
+}
+
+.header_admin_settings{
+width: 100%;
+height: 100vh;
+background-color: white;
+z-index: 3;
+}
+
+.background-fixed{
+top: 0;   
+left: 0;                
+width: 100%;
+height: 100vh;                  
+position: fixed;
+background-color: aquamarine;
+z-index: -1;
+}
+
+
+.nav{
+width: 100%;
+height: 10vh;
+background-color: rgb(0, 0, 0);
+display: flex;
+justify-content: space-between;
+color: rgb(255, 255, 255);
+transition: 1s;
+cursor: pointer;
+z-index: 4;
+position: fixed;
+}
+
+
+
+/*----------------------left icons-----*/
+.left-icons img{
+border-radius: 50%;
+border: 3px solid white;
+margin-bottom: 2px;
+margin-top: 2px;
+margin-left: 40%;
+}
+
+
+.left-icons p{
+margin-left: 31%;
+}
+
+.left-icons{
+width: 300px;
+height: 80%;
+background-color: transparent;
+padding: 10px;
+}
+
+
+/*------right-icons---*/
+
+
+.right-icons img{
+border-radius: 50%;
+border: 3px solid white;
+margin-bottom: 2px;
+margin-top: 2px;
+margin-left: 40%;
+cursor: pointer;
+transition: 1s;
+}
+
+.right-icons img:hover{
+border: 3px solid rgb(0, 224, 86);                   
+}
+  
+
+                    
+.right-icons p{
+margin-left: 23%;
+color:rgb(255, 255, 255); 
+}
+
+                    
+.right-icons{
+width: 300px;
+height: 80%;
+background-color: transparent;
+padding: 10px;
+}
+
+
+/*-------------------------------------funded div----------*/
+.funded-form-div{
+width: 800px;
+height: 445px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+top: 61%;
+left: 50%;
+transform: translate(-50%);
+margin-bottom: 30px;
+margin-top: 30px;
+padding-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+z-index: 8;
+}
+                    
+                    
+.funded-form-div input{
+width: 99%; 
+margin-top: 5px;
+margin-bottom: 5px;     
+padding: 3px;              
+}
+                    
+label{
+color: white;
+}
+                    
+.funded_companies_h1{
+color: white; 
+margin-bottom: 5px;                 
+}
+                    
+.submit_funded_companies{
+padding: 5px 120px;
+background-color: rgb(135, 226, 0);
+color: rgb(0, 0, 0);
+border: none;
+outline: none;
+margin-top: 5px;
+font-weight: 900;
+transition: 1s;
+cursor: pointer;
+}
+                    
+.submit_funded_companies:hover{
+color: rgb(255, 255, 255);     
+background-color: rgb(114, 191, 0);              
+}
+
+
+
+
+
+
+
+/*-------------------------------------dis approveddiv----------*/
+.dis-approved-form-div{
+width: 800px;
+height: 445px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+top: 111%;
+left: 50%;
+transform: translate(-50%);
+margin-bottom: 30px;
+margin-top: 30px;
+padding-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+z-index: 8;
+}
+                                        
+                                        
+.dis-approved-form-div input{
+width: 99%; 
+margin-top: 5px;
+margin-bottom: 5px;     
+padding: 3px;              
+}
+     
+                                       
+                                        
+.dis-approved-form-div textarea{
+width: 99%; 
+margin-top: 5px;
+margin-bottom: 5px;     
+padding: 3px;              
+}
+
+
+
+
+label{
+color: white;
+}
+                                        
+.disapproved_companies_h1{
+color: white; 
+margin-bottom: 5px;                 
+}
+                                        
+.submit_disapproved_companies{
+padding: 5px 120px;
+background-color: rgb(135, 226, 0);
+color: rgb(0, 0, 0);
+border: none;
+outline: none;
+margin-top: 5px;
+font-weight: 900;
+transition: 1s;
+cursor: pointer;
+}
+                                        
+.submit_disapproved_companies:hover{
+color: rgb(255, 255, 255);     
+background-color: rgb(114, 191, 0);              
+}
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------applied-form-div----*/
+
+
+.applied-form-div{
+width: 800px;
+height: 445px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+top: 10%;
+left: 50%;
+transform: translate(-50%);
+margin-bottom: 30px;
+margin-top: 30px;
+padding-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+z-index: 8;
+}
+
+.applied-form-div input{
+ width: 99%; 
+ margin-top: 5px;
+ margin-bottom: 5px;     
+ padding: 3px;              
+}
+
+label{
+color: white;
+}
+
+.approved_companies_h1{
+color: white; 
+margin-bottom: 5px;                 
+}
+
+.submit_approved_companies{
+padding: 5px 120px;
+background-color: rgb(135, 226, 0);
+color: rgb(0, 0, 0);
+border: none;
+outline: none;
+margin-top: 5px;
+font-weight: 900;
+transition: 1s;
+cursor: pointer;
+}
+
+.submit_approved_companies:hover{
+color: rgb(255, 255, 255);     
+background-color: rgb(114, 191, 0);              
+}
+
+
+/*-----------------successs message---*/
+
+.successs-messsage{
+ position: absolute;
+ top: 30px;
+ background-color: rgb(0, 165, 50);
+ left: 50%;
+ transform: translate(-50%);
+ padding: 10px;
+ border-radius: 10px;
+ z-index: 5;
+}
+
+
+.successs-messsage p{
+color: white;                                    
+}
+
+/*-----------------unsuccesss message---*/
+.unsuccesss-messsage{
+position: absolute;
+top: 30px;
+background-color: rgb(165, 0, 0);
+left: 50%;
+transform: translate(-50%);
+padding: 10px;
+border-radius: 10px;
+z-index: 4;
+}
+                                 
+.unsuccesss-messsage p{
+color: white;                                    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

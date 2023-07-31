@@ -1,0 +1,129 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+.header-login{
+ width: 100%;     
+ height: 100vh; 
+ background-color: rgb(38, 38, 38);             
+}
+
+
+.form-diva{
+width: 680px;
+height: 320px;
+position: absolute;
+top: 4.2%;
+left: 33%;
+background-color: transparent;
+padding-left: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-top: 240px;
+                    
+}
+ 
+.login-blue img{
+position: absolute;
+top: 10%;
+transform: translate(-50%);
+width: 20%;
+border: 3px solid transparent;
+border-radius: 60%;
+cursor: pointer;
+transition: 0.8s;
+
+}
+
+
+
+.login-blue img:hover{
+border: 3px solid rgb(0, 170, 200);
+padding: 35px;
+}
+
+
+
+.form-diva input{
+width: 93.5%;
+padding-left: 40px;
+padding-right: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 10px;
+border: none;                  
+}
+                    
+                    
+/*----------------------------button -------*/
+                    
+button{
+width: 100%;
+padding: 10px;
+ margin-bottom: 10px;  
+margin-top: 10px; 
+background-color:rgb(0, 170, 200);
+color: white;  
+transition: 1s;   
+border: none;   
+outline: none; 
+cursor: pointer;      
+}
+                    
+button:hover{
+background-color: rgb(0, 94, 128); 
+color: white;               
+}
+
+/*---------------------------------background-monitor-pc---*/
+
+.background-monitor-pc{
+position: absolute;
+left: 47.5%;
+transform: translate(-50%);
+}
+                                        
+.background-monitor-pc img{
+width: 115%;
+}
+
+
+/*---------------------------------message errors---*/
+
+.email-error{
+color: red;
+}
+                    
+                    
+.ministry-error{
+color: red;
+}
+                    
+                    
+.password-error{
+color: red;
+}
+      
+
+
+/*---------------------------------usericon---*/
+.usericon{
+position: relative;
+top: 37px;
+left: -37px;
+width: 30px;
+}
+
+/*---------------------------------passwordicon---*/
+.passwordicon{
+position: relative;
+top: 37px;
+left: -62px;
+width: 30px;
+}
+
+.login-btn{
+width: 40px;
+}

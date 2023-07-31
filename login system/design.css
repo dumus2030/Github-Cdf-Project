@@ -1,0 +1,360 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+       
+.header{
+width:100%;
+height: auto;
+background-color: rgb(0, 0, 0);
+z-index: -1;
+}
+
+
+
+
+.welcome{
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  z-index: 5;
+  transition: 1s;
+  cursor: pointer;
+  text-align: center;
+  transform: translate(-50%,-50%);
+
+
+}
+
+.welcome:hover{
+  color: mediumseagreen;
+
+}
+
+
+
+
+
+
+
+
+       
+       
+nav{
+background-color: rgb(0, 247, 144);
+height: 10vh;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+       
+.nav-links{
+z-index: 6;
+right: 0;
+position: absolute;
+top: 40px;
+}
+               
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 0px 20px;
+padding-bottom: 25px;
+               
+ }
+               
+.nav-links ul li a{
+ text-decoration: none;
+ font-size: 16px;
+ color: rgb(0, 0, 0);
+                
+}
+               
+.nav-links ul li ::after{
+ content: '';
+ width: 0%;
+height: 5px;
+background-color: black;
+display: block;
+margin: auto;
+transition: 1s;
+}
+               
+.nav-links ul li:hover ::after{
+width: 100%;
+}
+               
+.nav-links img{
+width: 15px;
+margin-right: 5px;
+}
+                
+       
+       
+/*----------------------------------conainer users--------------------------*/
+       
+.card{
+background-color: rgb(241, 241, 241);
+width: 100%;
+height: 36vh;
+z-index: -2;
+                
+}
+
+ 
+
+  
+       
+.card-body{
+position: relative;
+padding-top: 30px;
+padding-left: 50px;
+padding-right: 50px;
+margin-left: 0px;
+margin-bottom: 20px;
+justify-content: space-between;
+display: flex;
+align-items: center;
+    
+
+                 
+}
+
+.card-body-2{
+position: relative;
+top: -20px;
+display: inline-flex;
+
+}
+
+  
+       
+.col{
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 5px;
+
+                
+}
+
+.image{
+border-radius: 20%;
+z-index: 2;   
+cursor: pointer;                    
+}
+                   
+                
+.name{
+  position: relative;
+  left:-0px;
+  background-color: rgba(128, 128, 128, 0.13);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 1710px;
+  padding-left: 30px;
+  text-align: center;
+  z-index: 2;   
+
+  
+ }
+ 
+ .name1{
+   background-color: transparent;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  z-index: 2;   
+  position: absolute; 
+ top: 32px;
+ left: 250px;  
+ }
+ 
+                 
+        
+ .town{   
+ position: absolute; 
+ top: 32px;
+ left: 460px;
+ background-color: transparent;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+ z-index: 3; 
+ }
+        
+ .area{
+ position: absolute; 
+ top: 32px;
+ left: 670px;
+ background-color: transparent;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+ z-index: 3; 
+           
+                 
+ }
+        
+ .home{
+ position: absolute; 
+ top: 32px;
+ left: 880px ;             
+ background-color: transparent; 
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+ z-index: 3; 
+ 
+ }
+                 
+        
+ .age{
+ position: absolute; 
+ top: 32px;
+ left: 1126px;        
+ background-color: transparent;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+ z-index: 3; 
+                 
+ }
+        
+        
+ .email{  
+ position: absolute; 
+ top: 32px;
+ left: 1335px;   
+ background-color: transparent;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+
+ z-index: 3; 
+                  
+ }
+        
+ .contact{ 
+ position: absolute; 
+ top: 32px;
+ left: 1546px;         
+ background-color: transparent;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+ z-index: 3; 
+ 
+                     
+                 
+ }
+ 
+ .gender{
+ position: absolute; 
+ top: 32px;
+ left: 1755px;               
+ background-color: transparent;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-right: 30px;
+ padding-left: 30px;
+ text-align: center;
+ z-index: 3; 
+                                  
+              
+   }
+ 
+ 
+
+
+
+
+.about{
+           
+background-color: transparent;
+padding-top: 50px;
+padding-bottom: 50px;
+padding-right: 30px;
+padding-left: 30px;
+text-align: center;
+z-index: 3; 
+                        
+}
+
+
+
+
+
+.networking{
+background-color: transparent;
+padding-top: 50px;
+padding-bottom: 50px;
+padding-right: 30px;
+padding-left: 30px;
+text-align: center;  
+z-index: 3;              
+}
+
+       
+.gender{
+                
+background-color: transparent;
+padding-top: 50px;
+padding-bottom: 50px;
+padding-right: 30px;
+padding-left: 30px;
+text-align: center;
+z-index: 3; 
+                               
+           
+}
+        
+
+
+       
+ .network-23{
+  width:600px;
+  background-color: rgba(128, 128, 128, 0.13);
+  margin-left: 270px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding:10px;
+  transition: 1s;
+  cursor: pointer;
+
+ }   
+ 
+ .network-23:hover{
+  background-color: black;
+  color: white;
+ }
+   
+ 
+ .about-1{
+  width: 600px;
+  background-color: rgba(2, 192, 87, 0.671);
+ margin-left: 210px;
+ margin-bottom: 20px;
+ border-radius: 30px;
+ transition: 1s;
+  cursor: pointer;
+ }
+
+ .about-1:hover{
+  background-color: black;
+  color: white;
+ }

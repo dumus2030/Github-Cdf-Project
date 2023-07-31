@@ -1,0 +1,184 @@
+*{
+margin:0;
+padding: 0;
+}
+
+.header{
+ width: 100%;
+ height: 100vh;     
+ background-color: rgb(255, 255, 255);      
+         
+}
+
+
+.background-monitor-pc{
+position: absolute;
+left: 47.5%;
+transform: translate(-50%);
+}
+
+
+.background-monitor-pc img{
+width: 115%;
+}
+                    
+
+
+
+
+
+.form-diva{
+width: 680px;
+height: 526px;
+position: absolute;
+top: 6%;
+left: 31.5%;
+background-color: rgb(233, 233, 233);
+padding: 10px;
+
+}
+
+.form-diva input{
+width: 97%;
+padding: 5px;
+margin-bottom: 10px;
+border: none;
+
+}
+
+
+/*----------------------------button -------*/
+
+button{
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;  
+margin-top: 10px; 
+background-color:rgb(0, 200, 0);
+color: white;  
+transition: 1s;   
+border: none;   
+outline: none;  
+cursor: pointer;     
+}
+
+button:hover{
+background-color: green; 
+color: white;               
+}
+
+
+/*----------------------------check flex -------*/
+.check-flex{
+display: flex;
+margin-left: 0;
+margin-top: 10px;
+}
+
+.check-flex p{
+margin-left:10px;
+color:white;
+}
+
+
+/*----------------------------label -------*/
+
+label{
+color: rgb(0, 0, 0);
+}
+
+/*--------signup---*/
+
+.signup-logo{
+position: absolute;
+top: 85.5%;       
+left: 51.5%; 
+transform: translate(-50%); 
+text-align: center;        
+}
+
+.signup-logo h2{
+font-size: 25px;
+color: rgb(40, 198, 0);
+}
+
+
+.signup-logo p{
+font-size: 18px;
+color: rgb(255, 255, 255);
+font-weight: 900;
+}
+
+.coat img{
+width: 10%;
+
+}
+
+
+.cdf2 img{
+position: absolute;
+top:70.5%;
+left: 63%;
+width: 10%;
+                    
+}
+
+
+
+h3{
+position: absolute;
+top:75.5%;
+left: 73%;
+width: 10%;
+color: aquamarine;
+font-size: 35px;
+}
+                     
+
+/*------------------------------ERRORS--------*/
+.firstname-error{
+color: red;
+}
+
+.lastname-error{
+color: red;
+}
+
+
+.nrc-error{
+color: red;
+}
+
+
+.email-error{
+color: red;
+}
+
+
+.ministry-error{
+color: red;
+}
+
+
+.password-error{
+color: red;
+}
+
+
+.cpassword-error{
+color: red;
+}
+                     
+                     
+/*-----------------------------login-link-div------*/
+
+.login-link-div{
+position: absolute;
+top: 53%;
+left: 50%;
+z-index: 8;
+transform: translate(-50%);
+}
+                     
+                     
+                    

@@ -1,0 +1,387 @@
+*{
+margin: 0;
+padding: 0;  
+                  
+}
+
+.header{
+width: 100%;
+height: 100vh;
+background: white;
+
+}
+
+.poster-user-name-pic{
+width: 100%;
+height: 24vh;
+background-color: rgb(0, 160, 125);
+padding: 20px;
+border-bottom: 3px solid black;
+}
+
+.center-user-details{
+position: absolute;
+top: 14.1%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 400px;
+height: 23%;
+background-color: transparent;           
+padding: 5px;    
+}
+
+.center-user-details h1{
+margin-left: 75px;
+color: rgb(255, 255, 255);
+}
+
+.center-user-details img{
+margin-left: 102px;  
+border-radius: 10px;
+            
+}
+
+/*-----------------------------------end of center and poster-user-names*/
+
+
+
+hr{
+
+height: 1px;
+background-color: rgba(240, 240, 240, 0.283);
+}
+
+
+.hr1{
+margin-top: 10px;
+height: 4;
+opacity: 0.2;
+}
+
+.form-diving{
+background-color: rgb(0, 0, 0);
+width: 100%;
+height: 100vh;
+z-index: 1;
+margin-top: 2px;
+}
+
+.form{
+width: 600px;
+height: 20%;
+background-color: transparent;
+margin: auto;
+}
+
+.form input{
+width: 98%; 
+padding-left: 2px ;
+margin-left: 4px;     
+margin-top: 15px; 
+margin-bottom: 4px;
+border: 1px solid white;
+border-radius: 3px;
+background-color: transparent;    
+padding-top: 10px;  
+padding-bottom: 10px;  
+color: white;   
+}
+
+.form ::placeholder{
+color: rgb(0, 177, 142);
+}
+
+
+
+
+
+textarea{
+width: 96.5%; 
+margin-left: 0px;  
+margin-top: 6px;   
+margin-bottom: 4px;    
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 1px;   
+border-top: none;  
+border-right: none;  
+border-left: none;  
+outline: none; 
+background-color: transparent; 
+border-bottom: 2px solid white; 
+color: white;          
+}
+
+button{
+padding: 5px 40px;
+color: black;
+background-color: rgb(0, 255, 204);
+outline: none;
+border: none;
+transition: 1s;
+cursor: pointer;
+}
+
+button:hover{
+background-color: deepskyblue;
+color: white;           
+}
+
+
+
+
+/*--------------------------------------------------form ends here-----------------*/
+
+.number-of-comments{
+color: deepskyblue;
+position: relative;
+left: 60.6%;
+}
+
+.commenting{
+position: relative;
+top: 10px;
+left: -3px;
+width: 31%;    
+height: 10vh;   
+background-color: rgba(0, 170, 255, 0.34);   
+border-bottom: 2px solid rgb(0, 177, 142);
+margin: auto;    
+display: flex;  
+padding-left: 2px;
+padding-top: 10px;
+padding-bottom: 3px;
+align-items: center;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+background-color: burlywood;  
+
+
+.commenting img{
+ padding-right: 8px;
+}
+
+.commenting h2{
+ font-size: 14px;
+ color: rgb(0, 177, 142);
+}
+
+.commenting h4{
+font-size: 14px;
+color: rgb(0, 140, 255);
+}
+
+.commenting p{
+color: white;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------reply-------*/
+
+.flexing-replies{
+position: relative;
+top: 20px;
+left: 36.2%;
+display: flex;
+}
+
+.flexing-replies button{
+margin-right: 10px;                    
+}
+
+.number-of-replies{
+color: rgb(0, 255, 204);
+position: relative;
+left: 89%;
+top:-80px;
+}
+
+.reply-container{                
+position: relative;
+top:3%;
+width: 31%;    
+height: 10vh; 
+background-color: transparent;
+left: 34.3%;
+}
+
+                    
+.form-reply input{
+width: 98%; 
+padding-left: 2px ;
+margin-left: 4px;     
+margin-top: 15px; 
+margin-bottom: 4px;
+border: 1px solid white;
+border-radius: 3px;
+background-color: transparent;    
+padding-top: 10px;  
+padding-bottom: 10px;  
+color: white;   
+}
+                    
+.form-reply ::placeholder{
+color: rgb(0, 177, 142);
+ }
+                    
+                    
+                    
+textarea{
+width: 96.5%; 
+margin-left: 0px;  
+margin-top: 6px;   
+margin-bottom: 4px;    
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 1px;   
+border-top: none;  
+border-right: none;  
+border-left: none;  
+outline: none; 
+background-color: transparent; 
+border-bottom: 2px solid white; 
+color: white;          
+}
+                    
+.reply-btn-submit{
+padding: 5px 40px;
+color: black;
+background-color: rgb(0, 255, 204);
+outline: none;
+border: none;
+transition: 1s;
+}
+                    
+.reply-btn-submit:hover{
+ background-color: deepskyblue;
+color: white;           
+}
+                    
+                    
+                    
+
+.reply-button{
+padding: 5px 40px;
+color: rgb(255, 255, 255);
+background-color: deepskyblue;
+outline: none;
+border: none;
+transition: 1s;
+cursor: pointer;
+}
+                    
+.reply-button:hover{
+background-color: rgb(0, 255, 204);
+color: rgb(0, 0, 0);           
+}
+
+
+
+.reply-button1{
+padding: 5px 20px;
+color: rgb(0, 0, 0);
+background-color: white;
+outline: none;
+border: none;
+transition: 1s;
+cursor: pointer;
+}
+                                        
+.reply-button1:hover{
+background-color: rgb(0, 157, 126);
+color: rgb(255, 255, 255);           
+}
+
+/*------------------------------------close replies----------------------*/
+
+.reply-button3{
+padding: 5px 30px;
+color: rgb(255, 255, 255);
+background-color:  rgb(0, 157, 126);
+outline: none;
+border: none;
+transition: 1s;
+cursor: pointer;
+}
+                                                            
+.reply-button3:hover{
+background-color: rgb(255, 56, 56);
+color: rgb(255, 255, 255);           
+}
+
+.reply-button4{
+padding: 5px 10px;
+color: rgb(255, 255, 255);
+background-color: rgb(255, 56, 56);
+outline: none;
+border: none;
+transition: 1s;
+cursor: pointer;
+}
+                                                                                
+.reply-button4:hover{
+background-color: rgb(0, 157, 126);
+color: rgb(255, 255, 255);           
+}
+                    
+                    
+                    
+
+
+/*------------------------------------------commenting replies box---*/
+
+
+.commenting-replies{
+position: relative;
+top: 25px;
+left: 34.3%;
+width: 31%;    
+height: 10vh;   
+background-color: rgba(0, 255, 187, 0.34);   
+border-bottom: 2px solid rgb(0, 177, 142); 
+display: flex;  
+padding-left: 2px;
+padding-top: 10px;
+padding-bottom: 3px;
+align-items: center;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+     
+
+.form-reply{
+position: relative;
+top: 25px;
+width: 600px;
+height: 20%;
+margin: auto;
+background-color: transparent;                 
+}
+
+                    
+                    
+.commenting-replies img{
+padding-right: 8px;
+}
+                    
+.commenting-replies h2{
+font-size: 14px;
+ color: rgb(0, 177, 142);
+}
+                    
+.commenting-replies h4{
+font-size: 14px;
+color: rgb(0, 140, 255);
+}
+                    
+.commenting-replies p{
+color: white;
+}
+                    

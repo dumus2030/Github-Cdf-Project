@@ -1,0 +1,454 @@
+*{
+ margin:0;
+padding: 0;
+box-sizing: border-box;         
+}
+
+.header{
+width: 100%;
+height: 105vh;
+background: rgb(0, 0, 0);
+z-index: 2;
+}
+
+/*--------------------------------------------------------------welcomeuser email--------------------------------*/
+
+
+.welcome-container{
+position: absolute;
+padding: 20px;
+background-color: transparent;
+z-index: 5;
+width: 600px;
+height: 260px;
+top: 60px;
+left: 27.6%;
+z-index: 5;
+}
+
+.welcome-container h1{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 5;
+  text-align: center;
+  transition: 1s;
+  color: white;
+}
+
+
+
+
+/*--------------------------------------------------------------welcomeuser email ends--------------------------------*/
+h4{
+  position: absolute;
+  top: 200px;
+  left: 13.5%;
+  z-index: 15;
+  text-align: center;
+  transition: 1s;
+  font-weight: 900;
+  color: deeppink;
+  cursor: pointer;
+  transition: 1s;
+}
+
+h4:hover{ 
+  color: rgb(2, 201, 62);
+}
+
+
+.username-welcome:hover{
+  color: rgb(255, 255, 255);
+}
+
+.nav-covering-top{
+position: absolute;
+top:0;
+background-color:transparent;
+width: 100%;
+height: 38vh;
+z-index: 2;
+}
+
+
+
+.background-inner-img2{
+position: absolute;
+width: 100%;
+top:370px;
+left: 23.3%;
+z-index: 1;
+opacity: 0.2;
+}
+/*----------------------------profile pic---------------*/
+
+
+.profile-image-defualt{
+  position: absolute;
+  top: 40px;
+  left: 180px;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 220, 117);
+}
+
+.profile-image-defualt1{
+  position: absolute;
+  top: 40px;
+  left: 180px;
+  z-index: 12;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 220, 117);
+
+}
+
+
+
+/*--------------------------split----------------------*/
+
+.split{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 300px;
+  padding-left: 450px;
+  padding-right: 20px;
+
+
+}
+
+.navigaion img{
+  width: 70px;
+ }
+ 
+
+/*-------------------------------------------------------------navigation------------------------------------------*/
+
+
+
+/*------------------------nav- background--------------*/
+
+
+.nav-background{
+ 
+  background-color: rgba(255, 255, 255, 0.274);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36.3vh;
+  z-index: 1;
+  filter: blur(3px);
+  background-size: cover;
+  transition: 1s;
+  cursor: pointer;
+  
+
+  
+  }
+
+  .nav-background-1:hover{
+    filter: blur(0px);
+  }
+
+
+  
+
+
+
+
+  /*-----------------------------------------hr---------------*/
+
+
+  hr{
+    position: absolute;
+    top: 350px;
+    width: 82%;
+    z-index: 2;
+    left: 20.1%;
+  }
+
+  /*---------------------------infromation -------------*/
+
+  
+
+  .btn-edit-profil-1{
+   margin-top:190px;
+    padding: 10px 10px;
+    background-color: rgb(62, 175, 10);
+    color: white;
+    box-shadow: 0 5px 10px black;
+    text-decoration: none;
+    z-index: 5;
+    transition: 1s;
+    margin-left: 60px;
+
+
+
+
+
+    
+  }
+
+  .btn-edit-profil-1:hover{
+    background-color: green;
+  }
+
+
+
+  .net{
+   margin-bottom: 30px;
+  }
+
+
+
+.print{
+width: 300px;
+height: 300px;
+position: absolute;
+font-size: 16px;
+background-color: aquamarine;
+left: 10%;
+padding:10px;
+padding-top: 30px;
+}
+
+
+.box-contain{
+position: absolute;
+left: 64%;
+top: 0;
+width: 500px;
+height: 1000px;
+background-color: chartreuse;
+padding-top: 15px;
+padding-bottom: 10px;
+padding-left: 50px;
+align-items: center;
+z-index: 15;
+
+}
+
+.lining{
+padding-bottom: 10px;
+display: block;
+}
+
+input{
+width:100%;
+padding: 5px;
+margin-top: 10px;
+border: none;
+outline: none;
+
+}
+
+.boxing{
+
+ width: 400px;
+ height: 400px;
+
+}
+
+label{
+margin-bottom: 10px;
+}
+
+textarea{
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ border: none;
+}
+
+button{
+background-color: rgb(52, 138, 13);
+padding: 10px 30px;
+margin-bottom: 10px;
+margin-top: 10px;
+cursor: pointer;
+color: white;
+border: 4px;
+box-shadow: 0 3px 10px black;
+text-decoration: none;
+transition: 1s;
+       
+}
+
+      
+button:hover{
+background-color: rgb(36, 95, 9);
+}
+      
+
+
+
+
+
+/*---------------------------------------------------------------cover-print-container------------------*/
+
+  /*------------------------------art profil green -----*/
+
+
+  .profil-green{
+    position:absolute;
+    top: 30px;
+    left: 60px;
+    opacity: 0.7;
+    z-index: 3;
+    opacity: 0.6;
+    width: 80%;
+  }
+   
+
+  .green-below-1{
+  position: absolute;
+  top:390px;
+  right: -60px;
+  opacity: 0.1;
+  z-index: 4;
+  }
+
+
+
+
+
+
+
+  /*---------------------------------------------profile new setup containment---------------------------------------*/
+  
+  
+.middle-section{
+ width: 123%;
+ height: 700px;
+ background-color: transparent;
+ position: absolute;
+ top: 37%;
+
+
+}
+
+
+.background-middle{
+  width: 53%;
+  height: 657px;
+  background-color: transparent;
+  z-index: 10;
+  position: absolute;
+  top: 0%;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 150px;
+  opacity: 1;
+  
+  
+
+}
+  
+  .profile-name-infor{
+    background-color: rgba(128, 128, 128, 0.099);
+    width: 290px;
+    height: 640px;
+    z-index: 12;
+    position: absolute;
+    left: 0;
+    top:55%;
+    padding: 20px;
+    
+  }
+  
+
+
+  .profile-infor1{
+    width: 290px;
+    height: 395px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+ 
+  }
+
+
+  .profile-infor1 p{
+    color: white;
+    margin-bottom: 2px;
+  }
+
+
+
+  /*--------------------------------------------------------settup 1---------------------------*/
+
+
+
+  /*-------------------------------------------------------------styling the upload button--------------------------*/
+
+  #pic_upload{
+  position: absolute;
+  z-index: 10;
+  top:15px;
+  left: -1040px;
+  width:280px;
+  border-radius:50%;
+  opacity: 0;
+  border: 2px solid black;    
+  }
+        
+      
+        
+  #pic_upload:hover{
+  filter: invert(30%);
+  }
+      
+  #pic_upload::-webkit-file-upload-button{
+  opacity: 1;
+  }
+      
+  #pic_upload::before{
+  content: '';
+  display: inline-block;
+  width: 540px; 
+  height: 325px;
+  cursor: pointer;
+  }
+      
+  /*-----------------------------span----------------------------------*/
+      
+  span{
+  color:rgb(111, 189, 38);
+  }
+      
+  .success.mge{
+ color:chartreuse;
+  }
+      
+.error.mgs{
+color: red;
+}
+
+
+
+.error-messages{
+margin-left: 35%;
+color: rgb(255, 0, 0);
+font-weight: 900;
+margin-top: 3px;
+}
+
+.error-profile-messages{
+position: absolute;
+top: 60%;
+color: rgb(255, 0, 0);  
+left: -98%;
+font-weight: 900;
+background-color: transparent;
+padding: 5px 20px;
+border-radius: 2px;
+border: 2px solid white;
+text-align: center;
+}

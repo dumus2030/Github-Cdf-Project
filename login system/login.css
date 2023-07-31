@@ -1,0 +1,185 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+.header{
+width: 100%;
+height: 100vh;
+background-image: url(web-artadss/login\ background.png);
+padding: 0;
+}
+
+
+
+.form-diva{
+position: absolute;
+top:61.5%;
+left: 50%;
+transform: translate(-50%);
+width: 310px;
+height: 280px;
+background-color: transparent;
+border-radius: 10px;
+}
+
+
+
+h2{
+margin-top: 5px;
+margin-bottom: 5px;
+color: deepskyblue;
+}
+
+
+
+
+input{
+width: 87%;
+padding: 10px;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 15px;
+border-radius: 10px;
+outline: none;
+border-color: rgba(100, 148, 237, 0.534);
+}
+
+button{
+padding: 10px 40px;
+color: white;
+background-color: rgb(126, 210, 0);
+transition: 1s;
+cursor: pointer;
+border: none;
+margin-top: 20px;
+}
+
+
+button:hover{
+color: white;
+background-color: rgb(77, 129, 0);
+}
+
+
+
+.error-email{
+position: absolute;
+left: 38.5%;
+top: 31%;
+padding: 10x;
+ width: 96%;
+border-radius: 5px;
+color: red;  
+z-index: 6;                 
+}
+
+
+
+.error-password{
+position: absolute;
+left: 33.6%;
+top: 56.5%;
+padding: 10x;
+width: 96%;
+border-radius: 5px;
+color: red;     
+z-index: 6;              
+}
+                    
+
+
+
+.error-incorrect{
+position: absolute;
+left: 5px;
+top: 95%;
+padding: 10x;
+width: 96%;
+border-radius: 5px;
+color: red;     
+z-index: 6;              
+}
+                                        
+                    
+                    
+.login-phone{
+top: 6%;
+ width: 20%;
+ position: relative;
+ left: 50%;
+ transform: translate(-50%);
+}
+
+
+                    
+.login-phone2{
+top: 10%;
+width: 20%;
+position: relative;
+left: 55%;
+transform: translate(-50%);
+opacity: 0.1;
+}
+
+.nethub{
+position: absolute;
+left: 43.7%;
+top:24%;
+font-size: 25px;  
+color: white;
+text-align: center; 
+z-index: 7;  
+color: greenyellow;   
+transition: 1s;
+cursor: pointer;           
+}
+
+.nethub:hover{
+color: rgb(0, 153, 255);                  
+}
+
+       
+.account a{
+text-decoration: none;
+font-size: 18px;
+
+}
+
+        
+.account h5{
+margin-top: 10px;
+color: rgb(0, 204, 255);
+transition: 1s;
+}
+        
+.account h5:hover{
+ color: rgb(0, 137, 172);
+}
+
+
+        
+        
+.networking2{
+position: absolute;
+top: 410px;
+left: 5.5%;
+z-index: 7;
+color: rgb(255, 255, 255);
+text-align: center;
+font-weight: 900;
+font-size: 50px;
+transition: 1s;
+cursor: pointer;
+transition: 1s;
+}
+        
+.net{
+color: black;
+font-weight: 900;
+}
+        
+.networking2:hover{
+color: rgb(0, 140, 255);
+}

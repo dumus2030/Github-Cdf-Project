@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login_admin</title>
+<link rel="stylesheet"href="login_admin.css">
+</head>
+<body>
+
+<section class="header-login">
+
+
+<!-----------background-monitor-pc starts-->
+<div class="background-monitor-pc">
+<img src="icons/computer-monitor-icon-flat-pc-3.png"> 
+</div>
+<!-----------background-monitor-pc starts-->
+                    
+
+<div class="form-diva">
+
+<div class="login-blue">
+<center>
+<img src="icons/login icon-blue-purple.png">           
+</center> 
+</div>
+
+
+
+<form action="login_admin.php" method="POST">
+
+                 
+<div>
+<label>Email
+<img src="icons/enelope-black.png" class="usericon"><input type="text" name="email" placeholder="your email Address" <?php if(isset($_POST['email'])) echo $_POST['email'];?>             
+</label> 
+<center>
+<p class="email-error"><?php if(isset($errors['email'])) echo $errors['email'];?></p>                
+</center>               
+</div>
+                    
+                    
+<div>
+<label>Password
+<img src="icons/login icon-green.png" class="passwordicon"><input type="text" name="password" placeholder="your password" <?php if(isset($_POST['password'])) echo $_POST['password'];?>             
+</label> 
+<center>
+<p class="password-error"><?php if(isset($errors['password'])) echo $errors['password'];?></p>                    
+</center>             
+</div>
+                                     
+                    
+<div>
+<button type="text" name="login_admin">Login <img src="icons/login icon-blue-purple.png" class="login-btn"></button>                              
+</div>
+                    
+                    
+</form>
+                    
+</div>
+                    
+
+
+
+
+
+</section>                    
+                    
+</body>
+</html>
